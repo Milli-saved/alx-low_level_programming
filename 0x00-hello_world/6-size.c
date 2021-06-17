@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of code
+ * main - Entry point
  *
- * prints the size of various types on the computer it is compiled and run on.
+ * The function print size of various types of data types
  *
- * Return : 0
+ * Return: 0
  */
 
 int main(void)
