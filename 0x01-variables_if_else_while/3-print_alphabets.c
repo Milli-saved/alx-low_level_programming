@@ -11,14 +11,18 @@
  */
 
 int main(){
-for(int x = 'A';x<= 'Z';x++){
-int lower_x = tolower(x);
-putchar(lower_x);
+
+char ch;
+
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
+putchar(ch);
 }
-for(int x = 'A';x<='Z';x++){
-int upper_x = toupper(x);
-putchar(upper_x);
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+{
+putchar(ch);
 }
+  
 putchar('\n');
 return 0;
 }
