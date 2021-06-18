@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Entery point
- *
- * This function prints one digit numbers.
- */
-int main(){
+* main - Print all single digit numbers
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+int digit;
 
-for(int x=0;x<10;x++){
-printf("%d",x);
-}
-printf("\n");
-  
-return 0;
+for (digit = 0; digit < 10; digit++)
+printf("%i", digit);
+putchar('\n');
+
+return (0);
 }

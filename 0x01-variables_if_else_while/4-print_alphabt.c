@@ -1,20 +1,20 @@
 #include <stdio.h>
-/**
- *
- * main - Entery point
- *
- * Return : Always 0 (success)
- *
- * This function prints the alphabet with out q and e.
- */
 
-int main(){
-for(int x = 'A';x<= 'Z';x++){
-if(x!='Q' && x!='E'){
-int lower_x = tolower(x);
-putchar(lower_x);
+/**
+* main - Print the alphabet in lowercase letters, except for e and q
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+char letter;
+
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter != 'e' && letter != 'q')
+putchar(letter);
 }
-}  
 putchar('\n');
-return 0;
+
+return (0);
 }
