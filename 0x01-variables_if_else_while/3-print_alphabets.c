@@ -10,7 +10,8 @@
  * using the putchar function.
  */
 
-int main(){
+int main(void)
+{
 
 char ch;
 
