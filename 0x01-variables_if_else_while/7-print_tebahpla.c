@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entery point
- *
- * Return : Always 0 (success)
- *
- *  This function prints small letter alphabets in the reverse order
- */
+* main - Print the alphabet in lowercase letters in reverse
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+char letter;
 
-int main(){
+for (letter = 'z'; letter >= 'a'; letter--)
+putchar(letter);
 
-for(int x='Z';x>='A';x--){
-int lower_case = tolower(x);
-putchar(lower_case);
-}
 putchar('\n');
-  
-return 0;
+
+return (0);
 }
