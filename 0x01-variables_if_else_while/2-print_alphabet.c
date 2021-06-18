@@ -14,6 +14,6 @@ for(int x = 'A'; x<= 'Z'; x++){
 int lower_case = tolower(x);
 putchar(lower_case);
 }
-  
+ putchar('\n');  
 return 0;
 }
