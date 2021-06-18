@@ -10,10 +10,11 @@
 
 int main(){
 
-for(int x = 'A'; x<= 'Z'; x++){
-int lower_case = tolower(x);
-putchar(lower_case);
-}
- putchar('\n');  
+  char c;
+
+for (c = 'a'; c <= 'z'; c++)
+  putchar(c);
+putchar('\n');
+
 return 0;
 }
