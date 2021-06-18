@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main : Entery point
+ * main : Entery point
  *
- *Return - Always 0 (success)
+ * Return - Always 0 (success)
  *
  *
  * This function prints the alphabet in small and capital letters
