@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ *
+ * main - Entery section
+ *
+ * Return : Always 0 (success)
+ *
+ * This function prints one digit numbers using putchar
+ */
+
+int main(){
+
+  for(int x= '0'; x<='9';x++){
+    putchar(x);
+  }
+  putchar('\n');
+  
+  return 0;
+}
