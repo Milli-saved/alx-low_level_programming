@@ -1,32 +1,38 @@
 #include <stdio.h>
+/* more headers goes there */
+/* betty style doc for function main goes there */
 /**
-* main - Print combinations of Three digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-int hundreds;
-int tens;
-int ones;
-for (hundreds = 0; hundreds <= 999; hundreds++)
+int i = 48, j = 49, y = 50;
+while (i < 58)
 {
-for (tens = hundreds + 10; tens <= 99; tens++)
+while (j < 58)
 {
-for (ones = tens + 1; ones <= 9; ones++)
+while (y < 58)
 {
-putchar(hundreds + '0');
-putchar(tens + '0');
-putchar(ones + '0');
-if (hundreds < 89)
+putchar(i);
+putchar(j);
+putchar(y);
+
+if (i != 55 || j != 56 || y != 57)
 {
 putchar(',');
 putchar(' ');
 }
+y++;
 }
+j++;
+y = j + 1;
 }
+i++;
+j = i;
 }
 putchar('\n');
-
 return (0);
 }
