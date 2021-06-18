@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 /**
- * main : Entery point
- *
- * Return - Always 0 (success)
+ * main - print alphabet in lower and uppercase
  *
  *
- * This function prints the alphabet in small and capital letters
- * using the putchar function.
+ * Return: (0) Success
  */
+
 int main(void)
 {
 char ch;
