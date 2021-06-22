@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include "holberton.h"
-
 /**
- * main- Entery
- * Return : always 0(success"
- * This program prints Holberton
+ * main- protocol holberton school
+ * Return: always zero
  */
-
-int main(void){
+int main(void)
+{
 _putchar('H');
 _putchar('o');
 _putchar('l');
