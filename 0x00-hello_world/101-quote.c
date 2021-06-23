@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * main - Where the program starts
  *
- * The function prints out a string
- *
- * Return: Always 0 (Success)
+ * Return: 1
  */
-int mai(void)
+int main(void)
 {
-write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+char q[] = "and that piece of art is useful\" - \
+Dora Korpar, 2015-10-19\n";
+
+write(2, q, 59);
 return (1);
 }
