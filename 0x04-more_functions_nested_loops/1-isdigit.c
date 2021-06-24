@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
- * _isdigit - function to check a number
+ * _isdigit - fn for check a number through 0 to 9
  * @c: is a number
  * Return: always 0.
  */
 int _isdigit(int c)
 {
-if(c >= 48 && c <= 57)
+if (c >= 48 && c <= 57)
 {
 return (1);
 }
