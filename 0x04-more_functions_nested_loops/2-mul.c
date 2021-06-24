@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * multiply two number
+ * mul- multiply two number
  * return int
  */
 int mul( int a, int b )
