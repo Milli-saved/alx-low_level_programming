@@ -1,4 +1,3 @@
-
 #include "holberton.h"
 /**
  * print_rev - writes the string in reverse
@@ -16,7 +15,7 @@ s++;
 i = i - 1;
 while (i >= 0)
 {
---;
+i--;
 s--;
 _putchar(*s);
 }
