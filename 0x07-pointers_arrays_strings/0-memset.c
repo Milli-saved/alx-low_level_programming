@@ -1,4 +1,3 @@
- 
 #include "holberton.h"
 /**
 * _memset -  function to set the memory to  a string
