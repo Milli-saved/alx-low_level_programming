@@ -1,32 +1,31 @@
 #include "holberton.h"
 
 /**
- * _strspn - gets the length of a prefix substring
+ * *_strspn - description
  * @s: string
- * @accept: string
- * Return: c
+ * @accept: pointer
+ * Return: int
  */
+
 
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int a, b, c;
+	int i, j, cmpt = 0;
 
-c = 0; /*c is the number of characters compared*/
-
-for (a = 0; s[a]; a++)
-{
-for (b = 0; accept[b] != '\0'; b++)
-{
-if (s[a] == accept[b])
-{
-c++;
-break;
-}
-}
-if (accept[b] != s[a])
-{
-break;
-}
-}
-return (c);
+	for (i = 0; s[i] >= '\0'; i++)
+	{
+		for (j = 0; accept[j] > '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				cmpt++;
+				break;
+			}
+		}
+		if (accept[j] == '\0')
+		{
+			break;
+		}
+	}
+	return (cmpt);
 }

@@ -1,47 +1,22 @@
-#include <stdio.h>
-#include <string.h>
-int _strlen(char *s);
+#include "holberton.h"
 
 /**
- * *_strcpy - Function
- * @dest: parameter
- * @src: parameter
- * Return: char
+ * *_strcpy -  copies the string pointed to by src
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
  */
 
 char *_strcpy(char *dest, char *src)
 {
-int i = 0;
-int longitud = _strlen(src);
+	int i = -1;
 
-while (i <= longitud)
-{
-dest[i] = src[i];
-i++;
-}
-return (dest);
-}
+	do {
+		i++;
+		dest[i] = src[i];
+	} while (src[i] != '\0');
 
-/**
- * _strlen - Function returns the length of a string
- * @s: parameter
- * Return: i
- */
-
-int _strlen(char *s)
-{
-int i = 1;
-
-if (s[0] == '\0')
-{
-i = 0;
-}
-else
-{
-while (s[i] != '\0')
-{
-i++;
-}
-}
-return (i);
+	return (dest);
 }
