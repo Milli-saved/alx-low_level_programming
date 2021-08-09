@@ -1,37 +1,42 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * read_textfile - function to read  and print a file
- * @filename: file
- * @letters: number of letters of the file
- * Return: numbers of letters or zero it fails
- */
+* read_textfile - check the code for Holberton School students.
+* @filename: file to read and write
+* @letters: number of letters to read and write.
+* Return: letters printed
+*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd = 0;
-char *buffer;
-int  byt_read;
-int byt_writ;
+ssize_t nletters;
+int file;
+char *text;
 
-if (filename == NULL)
+if (!filename)
 return (0);
-fd = open(filename, O_RDONLY);
-if (fd == -1)
+text = malloc(sizeof(char) * letters + 1);
+if (text == NULL)
 return (0);
-buffer = malloc(sizeof(char) * letters);
-if (buffer == NULL)
-return (0);
-byt_read = read(fd, buffer, letters);
-if (byt_read == -1)
+file = open(filename, O_RDONLY);
+if (file == -1)
 {
-free(buffer);
+free(text);
 return (0);
 }
-byt_writ = write(STDOUT_FILENO, buffer, (ssize_t)byt_read);
-if (byt_writ == -1)
+nletters = read(file, text, sizeof(char) * letters);
+if (nletters == -1)
 {
-free(buffer);
+free(text);
+close(file);
 return (0);
 }
-close(fd);
-return (byt_read);
+nletters = write(STDOUT_FILENO, text, nletters);
+if (nletters == -1)
+{
+free(text);
+close(file);
+return (0);
+}
+free(text);
+close(file);
+return (nletters);
 }
