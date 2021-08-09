@@ -56,7 +56,8 @@ if (e_ident[0] == 0x7f && e_ident[1] == 'E' &&
 e_ident[2] == 'L' && e_ident[3] == 'F')
 {
 printf("ELF Header:\n");
-} else
+}
+else
 dprintf(STDERR_FILENO, "Error: Not valid ELF\n"), exit(98);
 }
 
@@ -183,7 +184,6 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 {
 if (e_ident[EI_DATA] == ELFDATA2MSB)
 e_type = e_type >> 8;
-
 printf("  Type:                              ");
 switch (e_type)
 {
