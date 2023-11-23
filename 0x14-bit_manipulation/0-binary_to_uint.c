@@ -16,7 +16,7 @@ if (b[i] != '0' && b[i] != '1')
 return (0);
 if (b[i] == '1')
 number = (number << 1) | 1;
-else if (b[i] == '0') 
+else if (b[i] == '0')
 number <<= 1;
 }
 
